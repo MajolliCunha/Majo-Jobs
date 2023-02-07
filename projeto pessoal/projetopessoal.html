@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="projeto.css">
+    <link rel="stylesheet" type="text/css" href="font/css/all.min.css">
+    <title>Majolli Cunha</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="logo2.png" alt="Logo Majo" title="Logo Majo" width="100px" />
+        </div>
+        <ul>
+            <li>
+
+                <a href="https://github.com/majomajo89/" title="Github" target="_blank"><i
+                        class="fa-brands fa-github-alt"></i></a>
+            </li>
+            <li>
+
+                <a href="mailto:jollykairos@gmail.com" title="E-mail" target="_blank"><i class="fa-solid fa-at"></i></a>
+            </li>
+            <li>
+
+                <a href="http://wa.me/11941720096" title="Contato" target="_blank"><i
+                        class="fa-brands fa-square-whatsapp"></i></a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div>
+                <h1>Majolli Cunha</h1>
+                <h5>Estudante de Programação</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow"><i id="animation" class="fa-solid fa-square-caret-down"></i>
+
+            </div>
+            <div style="display:none" id="about">
+                <p>
+
+                    <img src="foto.png" title="It's me, Májô!" width="200px"/>
+                </p>
+                <p>
+
+                    Sou a Majolli, mais conhecida por Májô!
+                <p>
+                    Tenho 33 anos, sou casada, tenho 3 pets (que amo). também
+                    amo jogar vídeo games, assistir a filmes e séries, fazer passeios em família e aprender coisas
+                    novas.</p>
+                <p>Sou formada Ciências Contábeis e Controladoria, porém estou em transição de carreira e quero me
+                    tornar uma
+                    Developer. </p>
+
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!<i class="fa-solid fa-turn-down"></i></p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor e-mail">
+                    <button> Enviar <i class="fa-regular fa-share-from-square"></i></button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>
